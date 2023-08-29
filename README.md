@@ -14,7 +14,7 @@ a simple media control tool for spotify.
 
 ### required files
 
-media control.ahk, send-keys-to-spotify.ahk, nvdaControllerClient.dll(used to output speach using the nvda screenreader).
+media control.ahk, send-keys-to-spotify.ahk, nvdaControllerClient.dll(optional, used to output speach using the nvda screenreader).
 
 ### how to use
 
