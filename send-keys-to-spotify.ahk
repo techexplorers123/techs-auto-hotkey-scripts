@@ -1,13 +1,11 @@
 ; Global variable to cache the Spotify Window ID once it's been found
 global cached_spotify_window := 0
-
+DetectHiddenWindows, On
 ; FUNCTION: Send a hotkey string to Spotify 
 Spotify_HotkeySend(hotkeyString) {
-    DetectHiddenWindows, On
     winId := Get_Spotify_Id()
     ControlFocus, , ahk_id %winId%
     ControlSend, , %hotkeyString%, ahk_id %winId%
-    DetectHiddenWindows, Off
     return
 }
 
